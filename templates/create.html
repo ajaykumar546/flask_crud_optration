@@ -1,0 +1,67 @@
+{% extends 'master.html' %}
+{% include 'header.html' %}
+
+{% block title %} Add Student {% endblock %}
+
+{% block body %}
+
+<div class="container">
+    <form method="post" action="">
+        <table class="table">
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" name="first_name" class="form-control"></td>
+            </tr>
+
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" name="last_name" class="form-control"></td>
+            </tr>
+
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="email" class="form-control"></td>
+            </tr>
+
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="password" class="form-control"></td>
+            </tr>
+
+            <tr>
+                <td>Gender</td>
+                <td>
+                Male: <input type="radio" name="gender" value="male"/>
+                    female: <input type="radio" name="gender" value="female"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Hobbies</td>
+                <td>
+                    Cricket : <input type="checkbox" name="hobbies" value="cricket">
+                    Movies : <input type="checkbox" name="hobbies" value="movies">
+                    Tv : <input type="checkbox" name="hobbies" value="tv">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Country</td>
+                <td>
+                    <select name="country" class="from-control">
+                        <option value="india">India</option>
+                        <option value="usa">USA</option>
+                        <option value="australia">Australia</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>First Name</td>
+                <td><input type="submit" name="submit" class="btn btn-warning"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+{% endblock %}
